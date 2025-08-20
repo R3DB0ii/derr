@@ -73,7 +73,7 @@ void derr_log(derr_level lvl, const char *fmt, ...) __attribute__((format(printf
 void derr_log_errno(derr_level lvl, int errnum, const char *fmt, ...) __attribute__((format(printf,3,4)));
 
 // Convenienze
-#define DERR_DEBUGF(...) derr_log(DERR_DEBUG, __VA_ARGS__)
+#define DERR_DEBUG(...) derr_log(DERR_DEBUG, __VA_ARGS__)
 #define DERR_INFO(...)   derr_log(DERR_INFO,  __VA_ARGS__)
 #define DERR_WARN(...)   derr_log(DERR_WARN,  __VA_ARGS__)
 #define DERR_ERROR(...)  derr_log(DERR_ERROR, __VA_ARGS__)
